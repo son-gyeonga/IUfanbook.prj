@@ -72,19 +72,6 @@
          alert('전송되었습니다.')
         }
     </script>
-    <script>
-        $(document).ready(function(){
-	$.ajax({
-              type: "GET",
-              url: "http://spartacodingclub.shop/sparta_api/weather/changwon",
-              data: {},
-              success: function(response){
-		      let temp = response['temp']
-                  $('#temp').text(response['temp'])
-              }
-          })
-});
-    </script>
 </head>
 
 <body>
